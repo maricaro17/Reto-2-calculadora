@@ -9,9 +9,10 @@
         backgroundResetDelete: $background-reset-delete;
         fontColorLight: $font-color-light;
         fontColorDark: $font-color-dark;
-        backgroundShadowIgual:$background-igual-shadow-theme1;
+        backgroundShadowIgual:$background-igual-shadow;
         backgroundShadowResetDelete:$background-shadow-container-button-theme1;
         backgroundShadowButtonNumber:$background-shadow-theme1;
+        backgroundContainerNumber:$background-container-button-theme1;
     }
     theme2: {
         background :$background-theme2;
@@ -23,9 +24,9 @@
         fontColorDark: $font-color-dark-theme2;
         fontColorLight2: $font-color-light;
         backgroundContainerNumber:$background-container-button-theme2;
-        backgroundShadowIgual:$background-igual-shadow-theme2;
-        backgroundShadowResetDelete:$background-shadow-theme2;
-        backgroundShadowButtonNumber:$background-shadow-theme2;
+        backgroundShadowIgual:$background-igual-shadow-theme2 !important;
+        backgroundShadowResetDelete:$background-shadow-theme2 !important;
+        backgroundShadowButtonNumber:$background-shadow-theme2 !important;
     }
     theme3: {
         background :$background-theme3;
@@ -38,9 +39,9 @@
         fontColorDark: $font-color-dark-theme3-blue;
         fontColorLight2: $font-color-light;
         backgroundContainerNumber:$background-container-button-theme3;
-        backgroundShadowIgual:$background-igual-shadow-theme3;
-        backgroundShadowResetDelete:$background-shadow-theme3;
-        backgroundShadowButtonNumber:$background-shadow-theme3;
+        backgroundShadowIgual: 0px 3px $background-igual-shadow-theme3;
+        backgroundShadowResetDelete: 0px 3px $background-shadow-container-button-theme3;
+        backgroundShadowButtonNumber:  0px 3px $background-shadow-theme3;
 
         
     }

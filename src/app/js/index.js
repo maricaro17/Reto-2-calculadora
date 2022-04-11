@@ -2,19 +2,18 @@ import { Calculadora } from "./Calculadora.js";
 import tema from "../css/_export.module.scss";
 import "../css/index.scss";
 const display = document.getElementById("valor");
-const btnNumber= document.getElementsByClassName("numero");
-const btnOperador=document.getElementsByClassName("operador");
-const btnDelete=document.getElementsByClassName("delete");
-const btnIgual=document.getElementsByClassName("igual");
-const btnReset=document.getElementsByClassName("reset");
-const containerNumber=document.getElementsByClassName("container-number");
-const containerDisplay=document.getElementsByClassName("display");
-const containerInput=document.getElementsByClassName("background");
-const headCalc=document.getElementsByClassName("title");
-const headNumber=document.getElementsByClassName("parrafo");
-const numberDisplay=document.getElementsByClassName("valor");
-const containerTheme=document.getElementsByClassName("theme-container")
-
+const btnNumber = document.getElementsByClassName("numero");
+const btnOperador = document.getElementsByClassName("operador");
+const btnDelete = document.getElementsByClassName("delete");
+const btnIgual = document.getElementsByClassName("igual");
+const btnReset = document.getElementsByClassName("reset");
+const containerNumber = document.getElementsByClassName("container-number");
+const containerDisplay = document.getElementsByClassName("display");
+const containerInput = document.getElementsByClassName("background");
+const headCalc = document.getElementsByClassName("title");
+const headNumber = document.getElementsByClassName("parrafo");
+const numberDisplay = document.getElementsByClassName("valor");
+const containerTheme = document.getElementsByClassName("theme-container");
 
 let num1 = 0;
 let num2 = 0;
@@ -92,81 +91,137 @@ document.addEventListener("click", (e) => {
     display.innerHTML = `${Number(valorInicial)}`;
   }
   if (e.target.classList.contains("form-check-input")) {
-    
-    if(value === "option1") {
+    if (value === "option1") {
       document.body.style.background = tema["theme1-background"];
+
+      for (let i = 0; i < btnNumber.length; i++) {
+        btnNumber[i].style.background = tema["theme1-backgroundNumber"];
+        btnNumber[i].style.color = tema["theme1-fontColorDark"];
+        btnNumber[i].style.boxShadow = ""
+        btnNumber[i].style.boxShadow = tema["theme1-backgroundShadowButtonNumber"];
+      }
+
+      for (let i = 0; i < btnOperador.length; i++) {
+        btnOperador[i].style.background = tema["theme1-backgroundNumber"];
+        btnOperador[i].style.color = tema["theme1-fontColorDark"];
+        btnOperador[i].style.boxShadow = ""
+        btnOperador[i].style.boxShadow = tema["theme2-backgroundShadowButtonNumber"];
+      }
+
+      for (let i = 0; i < btnDelete.length; i++) {
+        btnDelete[i].style.background = tema["theme1-backgroundResetDelete"];
+        btnDelete[i].style.color = tema["theme1-fontColorLight"];
+        btnDelete[i].style.boxShadow = ""
+        btnDelete[i].style.boxShadow = tema["theme1-backgroundShadowResetDelete"];
+        btnReset[i].style.background = tema["theme1-backgroundResetDelete"];
+        btnReset[i].style.color = tema["theme1-fontColorLight"];
+        btnReset[i].style.boxShadow = ""
+        btnReset[i].style.boxShadow = tema["theme1-backgroundShadowResetDelete"];
+
+      }
+      headCalc[0].style.color = tema["theme1-fontColorLight"];
+      headNumber[0].style.color = tema["theme1-fontColorLight"];
+      containerTheme[0].style.color = tema["theme1-fontColorLight"];
+
+      containerInput[0].style.background = tema["theme1-backgroundDisplay"];
+
+      containerDisplay[0].style.background = tema["theme1-backgroundDisplay"];
+      numberDisplay[0].style.color = tema["theme1-fontColorLight"];
+
+      containerNumber[0].style.background =
+        tema["theme1-backgroundContainerNumber"];
+
+      btnIgual[0].style.background = tema["theme1-backgroundIgual"];
+      btnIgual[0].style.color = tema["theme1-fontColorLight"];
+      btnIgual[0].style.boxShadow = ""
+      btnIgual[0].style.boxShadow = tema["theme1-backgroundShadowIgual"];
+      
     }
-    if(value === "option2") {
-      document.body.style.background = tema["theme2-background"];   
-      for(let i = 0; i< btnNumber.length; i++){
-        btnNumber[i].style.background=tema["theme2-backgroundNumber"]
-        btnNumber[i].style.color=tema["theme2-fontColorDark"]
-
+    if (value === "option2") {
+      document.body.style.background = tema["theme2-background"];
+      for (let i = 0; i < btnNumber.length; i++) {
+        btnNumber[i].style.background = tema["theme2-backgroundNumber"];
+        btnNumber[i].style.color = tema["theme2-fontColorDark"];
+        btnNumber[i].style.boxShadow = ""
+        btnNumber[i].style.boxShadow = tema["theme2-backgroundShadowButtonNumber"];
       }
 
-      for(let i = 0; i< btnOperador.length; i++){
-        btnOperador[i].style.background=tema["theme2-backgroundNumber"]
-        btnOperador[i].style.color=tema["theme2-fontColorLight"]
-        
+      for (let i = 0; i < btnOperador.length; i++) {
+        btnOperador[i].style.background = tema["theme2-backgroundNumber"];
+        btnOperador[i].style.color = tema["theme2-fontColorDark"];
+        btnOperador[i].style.boxShadow = ""
+        btnOperador[i].style.boxShadow = tema["theme2-backgroundShadowButtonNumber"];
       }
 
-      for(let i = 0; i< btnDelete.length; i++){
-        btnDelete[i].style.background=tema["theme2-backgroundResetDelete"]
-        btnDelete[i].style.color=tema["theme2-fontColorLight"]
-        btnReset[i].style.background=tema["theme2-backgroundResetDelete"]
-        btnReset[i].style.color=tema["theme2-fontColorLight"]
-       
+      for (let i = 0; i < btnDelete.length; i++) {
+        btnDelete[i].style.background = tema["theme2-backgroundResetDelete"];
+        btnDelete[i].style.color = tema["theme2-fontColorLight"];
+        btnDelete[i].style.boxShadow = ""
+        btnDelete[i].style.boxShadow = tema["theme2-backgroundShadowResetDelete"];
+        btnReset[i].style.background = tema["theme2-backgroundResetDelete"];
+        btnReset[i].style.color = tema["theme2-fontColorLight"];
+        btnReset[i].style.boxShadow = ""
+        btnReset[i].style.boxShadow = tema["theme2-backgroundShadowResetDelete"];
       }
       headCalc[0].style.color = tema["theme2-fontColorDark"];
       headNumber[0].style.color = tema["theme2-fontColorDark"];
       containerTheme[0].style.color = tema["theme2-fontColorDark"];
 
       containerInput[0].style.background = tema["theme2-backgroundDisplay"];
-      
+
       containerDisplay[0].style.background = tema["theme2-backgroundDisplay"];
       numberDisplay[0].style.color = tema["theme2-fontColorDark"];
 
-      containerNumber[0].style.background = tema["theme2-backgroundContainerNumber"];
-      
+      containerNumber[0].style.background =
+        tema["theme2-backgroundContainerNumber"];
+
       btnIgual[0].style.background = tema["theme2-backgroundIgual"];
       btnIgual[0].style.color = tema["theme2-fontColorLight"];
-
+      btnIgual[0].style.boxShadow = ""
+      btnIgual[0].style.boxShadow = tema["theme2-backgroundShadowIgual"];
     }
-    if(value === "option3") {
-      document.body.style.background = tema["theme3-background"];   
-      for(let i = 0; i< btnNumber.length; i++){
-        btnNumber[i].style.background=tema["theme3-backgroundNumber"]
-        btnNumber[i].style.color=tema["theme3-fontColorLight"]
-
+    if (value === "option3") {
+      document.body.style.background = tema["theme3-background"];
+      for (let i = 0; i < btnNumber.length; i++) {
+        btnNumber[i].style.background = tema["theme3-backgroundNumber"];
+        btnNumber[i].style.color = tema["theme3-fontColorLight"];
+        btnNumber[i].style.boxShadow =
+          tema["theme3-backgroundShadowButtonNumber"];
       }
 
-      for(let i = 0; i< btnOperador.length; i++){
-        btnOperador[i].style.background=tema["theme3-backgroundNumber"]
-        btnOperador[i].style.color=tema["theme3-fontColorLight"]
-        
+      for (let i = 0; i < btnOperador.length; i++) {
+        btnOperador[i].style.background = tema["theme3-backgroundNumber"];
+        btnOperador[i].style.color = tema["theme3-fontColorLight"];
+        btnOperador[i].style.boxShadow =
+          tema["theme3-backgroundShadowButtonNumber"];
       }
 
-      for(let i = 0; i< btnDelete.length; i++){
-        btnDelete[i].style.background=tema["theme3-backgroundResetDelete"]
-        btnDelete[i].style.color=tema["theme3-fontColorLight2"]
-        btnReset[i].style.background=tema["theme3-backgroundResetDelete"]
-        btnReset[i].style.color=tema["theme3-fontColorLight2"]
-       
+      for (let i = 0; i < btnDelete.length; i++) {
+        btnDelete[i].style.background = tema["theme3-backgroundResetDelete"];
+        btnDelete[i].style.color = tema["theme3-fontColorLight2"];
+        btnReset[i].style.background = tema["theme3-backgroundResetDelete"];
+        btnReset[i].style.color = tema["theme3-fontColorLight2"];
+
+        btnDelete[i].style.boxShadow =
+          tema["theme3-backgroundShadowResetDelete"];
+        btnReset[i].style.boxShadow =
+          tema["theme3-backgroundShadowResetDelete"];
       }
       headCalc[0].style.color = tema["theme3-fontColorLight"];
       headNumber[0].style.color = tema["theme3-fontColorLight"];
       containerTheme[0].style.color = tema["theme3-fontColorLight"];
 
       containerInput[0].style.background = tema["theme3-backgroundDisplay"];
-      
+
       containerDisplay[0].style.background = tema["theme3-backgroundDisplay"];
       numberDisplay[0].style.color = tema["theme3-fontColorLight"];
 
-      containerNumber[0].style.background = tema["theme3-backgroundContainerNumber"];
-      
+      containerNumber[0].style.background =
+        tema["theme3-backgroundContainerNumber"];
+
       btnIgual[0].style.background = tema["theme3-backgroundIgual"];
       btnIgual[0].style.color = tema["theme3-fontColorDark"];
-
+      btnIgual[0].style.boxShadow = tema["theme3-backgroundShadowIgual"];
     }
   }
 });

@@ -9,6 +9,11 @@ $backgound-display:#181f32;
 $backgound-reset-delete: #647299;
 $font-color-light: #ffffff;
 $font-color-dark: #000000;
+$shadow-button-number: #b4a597;
+$shadow-button-number-igual:#93261a;
+$shadow-button-number-reset: #404e72;
+
+
 
 body {
     background-color: $backgound;
@@ -17,7 +22,7 @@ body {
 }
 button{
     border: none;
-    box-shadow: 0px 3px #a717da
+    
 }
 .theme {
     display: flex;
@@ -108,18 +113,21 @@ button{
 .numero,
 .operador {
     font-size: 32px;
+    box-shadow: 0px 3px $shadow-button-number; 
 }
 
 .igual {
     background-color: $backgound-igual;
     color: $font-color-light;
     font-size: 20px;
+    box-shadow: 0px 3px $shadow-button-number-igual; 
 }
 
 .reset,
 .delete {
     background-color: $backgound-reset-delete;
     color: $font-color-light;
+    box-shadow: 0px 3px $shadow-button-number-reset; 
 }
 
 .operador,
