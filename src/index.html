@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Reto 2 | Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <div class="theme">
+          <h5 class="title">calc</h5>
+
+          <div class="theme-container-options">
+            <p class="parrafo" >1 2 3</p>
+            <div class="theme-container">
+              <h6>THEME</h6>
+              <div class="background">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <div id="valor" class="valor"></div>
+        </div>
+        <div class="container-number">
+          <button class="numero" value="7" id="siete">7</button>
+          <button class="numero" value="8" id="ocho">8</button>
+          <button class="numero" value="9" id="nueve">9</button>
+          <button class="delete" id="delete">DEL</button>
+          <button class="numero" value="4" id="cuatro">4</button>
+          <button class="numero" value="5" id="cinco">5</button>
+          <button class="numero" value="6" id="seis">6</button>
+          <button class="operador" value="+" id="sumar">+</button>
+          <button class="numero" value="1" id="uno">1</button>
+          <button class="numero" value="2" id="dos">2</button>
+          <button class="numero" value="3" id="tres">3</button>
+          <button class="operador" value="-" id="restar">-</button>
+          <button class="numero" value="." id="punto">.</button>
+          <button class="numero" value="0" id="cero">0</button>
+          <button class="operador" value="/" id="dividir">/</button>
+          <button class="operador" value="*" id="multiplicar">x</button>
+          <button class="reset" onclick="" id="reset">RESET</button>
+          <button class="operador igual" value="=" id="igual">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

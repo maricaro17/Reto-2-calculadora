@@ -1,0 +1,47 @@
+@import "variables";
+:export  {
+    theme1: {
+        background :$background;
+        fontFamily : $font-family;
+        backgroundNumber: $background-number;
+        backgroundIgual: $background-igual;
+        backgroundDisplay:$background-display;
+        backgroundResetDelete: $background-reset-delete;
+        fontColorLight: $font-color-light;
+        fontColorDark: $font-color-dark;
+        backgroundShadowIgual:$background-igual-shadow-theme1;
+        backgroundShadowResetDelete:$background-shadow-container-button-theme1;
+        backgroundShadowButtonNumber:$background-shadow-theme1;
+    }
+    theme2: {
+        background :$background-theme2;
+        fontFamily : $font-family;
+        backgroundNumber: $background-number-theme2;
+        backgroundIgual: $background-igual-theme2;
+        backgroundDisplay:$background-display-theme2;
+        backgroundResetDelete: $background-reset-delete-theme2;
+        fontColorDark: $font-color-dark-theme2;
+        fontColorLight2: $font-color-light;
+        backgroundContainerNumber:$background-container-button-theme2;
+        backgroundShadowIgual:$background-igual-shadow-theme2;
+        backgroundShadowResetDelete:$background-shadow-theme2;
+        backgroundShadowButtonNumber:$background-shadow-theme2;
+    }
+    theme3: {
+        background :$background-theme3;
+        fontFamily : $font-family;
+        backgroundNumber: $background-number-theme3;
+        backgroundIgual: $background-igual-theme3;
+        backgroundDisplay:$background-display-theme3;
+        backgroundResetDelete: $background-reset-delete-theme3;
+        fontColorLight: $font-color-dark-theme3;
+        fontColorDark: $font-color-dark-theme3-blue;
+        fontColorLight2: $font-color-light;
+        backgroundContainerNumber:$background-container-button-theme3;
+        backgroundShadowIgual:$background-igual-shadow-theme3;
+        backgroundShadowResetDelete:$background-shadow-theme3;
+        backgroundShadowButtonNumber:$background-shadow-theme3;
+
+        
+    }
+}

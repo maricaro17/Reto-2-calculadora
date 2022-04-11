@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+$font-family: 'Spartan',
+sans-serif;
+$backgound :#3a4764;
+$backgound-number: #222e43;
+$backgound-igual: #d23e33;
+$backgound-igual-cyan: #00decf;
+$backgound-display:#181f32;
+$backgound-reset-delete: #647299;
+$font-color-light: #ffffff;
+$font-color-dark: #000000;
+
+body {
+    background-color: $backgound;
+    color: $font-color-light;
+    font-family: $font-family;
+}
+button{
+    border: none;
+    box-shadow: 0px 3px #a717da
+}
+.theme {
+    display: flex;
+    justify-content: space-between;
+    &.title {
+        margin: 0px;
+        align-items: baseline;
+    }
+    .theme-container-options {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    
+    
+        p {
+            text-align: center;
+            margin: 0;
+            font-size: 8pt;
+            letter-spacing: 3px;
+            letter-spacing: 3px;
+            padding: 0px 5px;
+        }
+    }
+    
+    .theme-container {
+        display: flex;
+        height: 21px;
+        align-items: baseline;
+        margin-top: 3px;
+        h6 {
+            font-size: 6pt;
+            margin: 0;
+            margin-right: 5px;
+        }
+        .background {
+            background: $backgound-display;
+            width: 48px;
+            border-radius: 10px;
+            padding: 0px 5px;
+    
+        }
+    
+        .form-check-input {
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+.container {
+    width: 290px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container-number {
+    background-color: $backgound-number;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.delete {
+    width: 60px;
+    height: 45px;
+    margin: 3px;
+    font-size: 20px;
+    padding: 10px 0px;
+
+}
+
+.numero,
+.operador {
+    width: 60px;
+    margin: 3px;
+}
+
+.igual,
+.reset {
+    width: 130px;
+}
+
+.igual,
+.reset {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.numero,
+.operador {
+    font-size: 32px;
+}
+
+.igual {
+    background-color: $backgound-igual;
+    color: $font-color-light;
+    font-size: 20px;
+}
+
+.reset,
+.delete {
+    background-color: $backgound-reset-delete;
+    color: $font-color-light;
+}
+
+.operador,
+.numero,
+.delete,
+.igual,
+.reset {
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.display {
+    background-color: $backgound-display;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 32px;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 10px;
+
+
+}
+
+#valor {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#inlineRadio1, #inlineRadio2 {
+    accent-color:$backgound-igual
+}
+#inlineRadio3{
+    accent-color:$backgound-igual-cyan;
+}
